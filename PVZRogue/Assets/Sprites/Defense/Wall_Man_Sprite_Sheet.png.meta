@@ -108,18 +108,62 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Wall_Man_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 537
+        width: 910
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 468, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9e360d03bec5d4485755a1ba0f2ba3
+      internalID: 462302174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Man_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 540
+        width: 630
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27563095be837a742866f7d635c105a9
+      internalID: 78428464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2b29456e9976ebb47bdd893f106cce3f
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wall_Man_Sprite_Sheet_0: 462302174
+      Wall_Man_Sprite_Sheet_1: 78428464
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
