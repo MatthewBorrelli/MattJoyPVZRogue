@@ -99,4 +99,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   cost: 10
-  iconSprite: {fileID: 0}
+  iconSprite: {fileID: 21300000, guid: c700cb5a160241b2eb484acd15726f22, type: 3}

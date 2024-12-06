@@ -10,13 +10,15 @@ public class CurrentDefenses : MonoBehaviour
     public GameObject[] defences = new GameObject[6];
     public ResourceManager reMan;
 
+
+
     public void BuyUnit(int index){
         DefenseUnit unit = defences[index].GetComponent<DefenseUnit>();
         if(unit.cost <= reMan.gold){
             reMan.selectedDefense = defences[index];
         }
         else{
-            print("Not enough gold..");
+            print("Not enough gold.");
         }
     }
 }

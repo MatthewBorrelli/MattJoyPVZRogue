@@ -10,9 +10,18 @@ public class DefenseUnit : MonoBehaviour
     public int health = 100;
     public int cost = 10;
 
-    public SpriteRenderer iconSprite;
+    public Sprite iconSprite;
+
+    public GridSpace gridSpace;
 
     void Start(){
-        iconSprite = GetComponent<SpriteRenderer>();
+        gridSpace.empty = false;
+    }
+
+    void Update(){
+        if(health <= 0){
+            gridSpace.empty = true;
+            Destroy(gameObject);
+        }
     }
 }

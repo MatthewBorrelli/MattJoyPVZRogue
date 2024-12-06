@@ -12,16 +12,16 @@ public class ResourceManager : MonoBehaviour
     RaycastHit hit;
 
     public Camera gameCamera;
-    
+
 
     void Update(){
 
         if(Input.GetMouseButtonDown(0) && Physics.Raycast(gameCamera.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, out hit)){
             
             if(hit.collider.GetComponent<GridSpace>().empty && selectedDefense != null){
+                selectedDefense.GetComponent<DefenseUnit>().gridSpace = hit.collider.GetComponent<GridSpace>();
                 Instantiate(selectedDefense, hit.collider.transform.position, hit.collider.transform.rotation);
                 gold -= selectedDefense.GetComponent<DefenseUnit>().cost;
-                hit.collider.GetComponent<GridSpace>().empty = false;
                 selectedDefense = null;
             }
             else if(selectedDefense == null)
