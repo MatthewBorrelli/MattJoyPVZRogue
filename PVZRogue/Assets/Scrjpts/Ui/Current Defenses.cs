@@ -13,7 +13,6 @@ public class CurrentDefenses : MonoBehaviour
     public void BuyUnit(int index){
         DefenseUnit unit = defences[index].GetComponent<DefenseUnit>();
         if(unit.cost <= reMan.gold){
-            reMan.gold -= unit.cost;
             reMan.selectedDefense = defences[index];
         }
         else{

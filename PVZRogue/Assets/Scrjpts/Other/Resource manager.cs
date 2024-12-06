@@ -15,11 +15,20 @@ public class ResourceManager : MonoBehaviour
     
 
     void Update(){
-        Debug.DrawRay(Input.mousePosition / 100, Vector3.forward * 1000, Color.red);
-        if(Input.GetMouseButton(0) && Physics.Raycast(gameCamera.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, out hit)){
+
+        if(Input.GetMouseButtonDown(0) && Physics.Raycast(gameCamera.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, out hit)){
             
-            if(hit.collider.GetComponent<GridSpace>())
-                print("Hit the grid");
+            if(hit.collider.GetComponent<GridSpace>().empty && selectedDefense != null){
+                Instantiate(selectedDefense, hit.collider.transform.position, hit.collider.transform.rotation);
+                gold -= selectedDefense.GetComponent<DefenseUnit>().cost;
+                hit.collider.GetComponent<GridSpace>().empty = false;
+                selectedDefense = null;
+            }
+            else if(selectedDefense == null)
+                print("No defense selected.");
+            else if(!hit.collider.GetComponent<GridSpace>().empty)
+                print("There is already a unit on that square.");
+            
         }
 
     }
