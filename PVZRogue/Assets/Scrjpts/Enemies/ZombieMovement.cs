@@ -40,6 +40,7 @@ public class ZombieMovement : MonoBehaviour
         {
             zombieSpeed = 0;
             isAttacking = true;
+            //call the attacking plant coroutine here
         }
     }
 
@@ -60,6 +61,7 @@ public class ZombieMovement : MonoBehaviour
             GetComponent<DefenseUnit>().health =- zombieDamage;
             yield return new WaitForSeconds(attackSpeed);
         }
+        //after for loop is over, make sure to let the zombie move again
     }
         
 }
