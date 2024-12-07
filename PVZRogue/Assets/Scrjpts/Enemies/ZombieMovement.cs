@@ -36,11 +36,10 @@ public class ZombieMovement : MonoBehaviour
     //Stops the Zombie and deals damage to the plant it is colliding with
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<DefenseUnit>())
+        if (other.gameObject.GetComponent<DefenseUnit>() && !isAttacking)
         {
-            zombieSpeed = 0;
             isAttacking = true;
-            //call the attacking plant coroutine here
+            StartCoroutine(AttackingPlant(other.gameObject.GetComponent<DefenseUnit>())); 
         }
     }
 
@@ -48,20 +47,26 @@ public class ZombieMovement : MonoBehaviour
     //Allows the zombie to move 
     private void zombieMove()
     {
-        transform.position += Vector3.left * zombieSpeed * Time.deltaTime;
+        if (!isAttacking)
+        {
+            transform.position += Vector3.left * zombieSpeed * Time.deltaTime;
+        }
     }
 
 
-    public IEnumerator AttackingPlant()
+    public IEnumerator AttackingPlant(DefenseUnit plant)
         //Allows the zombie to attack the plant in intervals so the kill isn't instantanious
     {
         isAttacking = true; 
-        for (float i = 0; i < attackSpeed; )
+        while (isAttacking)
         {
-            GetComponent<DefenseUnit>().health =- zombieDamage;
-            yield return new WaitForSeconds(attackSpeed);
+            plant.health =- zombieDamage;
+            if (plant != null)
+            {
+                yield return new WaitForSeconds(attackSpeed);
+            }
+            else
+                isAttacking = false;
         }
-        //after for loop is over, make sure to let the zombie move again
     }
-        
 }
