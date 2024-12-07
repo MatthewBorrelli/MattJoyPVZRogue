@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,12 +114,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 537
-        width: 910
-        height: 468
+        y: 540
+        width: 959
+        height: 540
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 468, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -134,12 +134,12 @@ TextureImporter:
       name: Wall_Man_Sprite_Sheet_1
       rect:
         serializedVersion: 2
-        x: 1185
+        x: 959
         y: 540
-        width: 630
-        height: 456
+        width: 959
+        height: 540
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,6 +147,27 @@ TextureImporter:
       bones: []
       spriteID: 27563095be837a742866f7d635c105a9
       internalID: 78428464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Man_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 959
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de5c3bdeee06a346ada4c0300abe34e
+      internalID: -311619648
       vertices: []
       indices: 
       edges: []
@@ -164,6 +185,7 @@ TextureImporter:
     nameFileIdTable:
       Wall_Man_Sprite_Sheet_0: 462302174
       Wall_Man_Sprite_Sheet_1: 78428464
+      Wall_Man_Sprite_Sheet_2: -311619648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
