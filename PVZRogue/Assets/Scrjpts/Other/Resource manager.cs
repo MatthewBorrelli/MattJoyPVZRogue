@@ -18,7 +18,12 @@ public class ResourceManager : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && Physics.Raycast(gameCamera.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, out hit)){
             
-            if(hit.collider.GetComponent<GridSpace>().empty && selectedDefense != null){
+            if(hit.collider.GetComponent<Gold>()){
+                print("Hit gold");
+                gold += hit.collider.GetComponent<Gold>().value;
+                Destroy(hit.collider.GetComponent<Gold>().gameObject);
+            }
+            else if(hit.collider.GetComponent<GridSpace>().empty && selectedDefense != null){
                 selectedDefense.GetComponent<DefenseUnit>().gridSpace = hit.collider.GetComponent<GridSpace>();
                 Instantiate(selectedDefense, hit.collider.transform.position, hit.collider.transform.rotation);
                 gold -= selectedDefense.GetComponent<DefenseUnit>().cost;
