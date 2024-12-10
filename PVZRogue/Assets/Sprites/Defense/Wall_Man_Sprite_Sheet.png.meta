@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 540
-        width: 959
-        height: 540
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b9e360d03bec5d4485755a1ba0f2ba3
-      internalID: 462302174
+      spriteID: 562554777fcd4d04cbf78fe1802c27f0
+      internalID: 603661426
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Wall_Man_Sprite_Sheet_1
       rect:
         serializedVersion: 2
-        x: 959
-        y: 540
-        width: 959
-        height: 540
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27563095be837a742866f7d635c105a9
-      internalID: 78428464
+      spriteID: ff68150f4ead6b74f9507b1b36c17b24
+      internalID: 29361991
       vertices: []
       indices: 
       edges: []
@@ -157,8 +157,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 959
-        height: 540
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0de5c3bdeee06a346ada4c0300abe34e
-      internalID: -311619648
+      spriteID: 1c440ae7c5b28c5448e451f5644ce095
+      internalID: 969786563
       vertices: []
       indices: 
       edges: []
@@ -175,7 +175,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2b29456e9976ebb47bdd893f106cce3f
+    spriteID: 25bf8d58dbaa6eb439d8a2fb37c29df0
     internalID: 0
     vertices: []
     indices: 
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wall_Man_Sprite_Sheet_0: 462302174
-      Wall_Man_Sprite_Sheet_1: 78428464
-      Wall_Man_Sprite_Sheet_2: -311619648
+      Wall_Man_Sprite_Sheet_0: 603661426
+      Wall_Man_Sprite_Sheet_1: 29361991
+      Wall_Man_Sprite_Sheet_2: 969786563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

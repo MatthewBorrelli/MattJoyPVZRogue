@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 540
-        width: 959
-        height: 540
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328c5dee1bac4544684c8103ba9e0a50
-      internalID: 1243736115
+      spriteID: 47a239439802e3544b0cc34e69775e87
+      internalID: 1374666895
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Explosive_Madman_Sheet_1
       rect:
         serializedVersion: 2
-        x: 959
-        y: 540
-        width: 959
-        height: 540
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a69d86d9dd835e42a868847a78f8d15
-      internalID: -466903947
+      spriteID: f2186870edc606b49bb7f0ffcbff8c2a
+      internalID: -1452640740
       vertices: []
       indices: 
       edges: []
@@ -157,8 +157,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 959
-        height: 540
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2977412e51085194b918ff1fc6dfb11e
-      internalID: -1056178140
+      spriteID: 92fcb8910cc8027419df818160594d05
+      internalID: 457507398
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: Explosive_Madman_Sheet_3
       rect:
         serializedVersion: 2
-        x: 959
+        x: 64
         y: 0
-        width: 959
-        height: 540
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f7ab92ad236e094db51d44e7911e856
-      internalID: -1151942635
+      spriteID: 5f032d095be397e42896cb33efce751c
+      internalID: -737322880
       vertices: []
       indices: 
       edges: []
@@ -196,7 +196,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3ef10eb1ad62a5c44b38ef6befbd683e
+    spriteID: ce2773aaf4f03734c8f50a3c62ae30c0
     internalID: 0
     vertices: []
     indices: 
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Explosive_Madman_Sheet_0: 1243736115
-      Explosive_Madman_Sheet_1: -466903947
-      Explosive_Madman_Sheet_2: -1056178140
-      Explosive_Madman_Sheet_3: -1151942635
+      Explosive_Madman_Sheet_0: 1374666895
+      Explosive_Madman_Sheet_1: -1452640740
+      Explosive_Madman_Sheet_2: 457507398
+      Explosive_Madman_Sheet_3: -737322880
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
