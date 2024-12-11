@@ -16,10 +16,10 @@ public class ZombieMovement : MonoBehaviour
     public float zombieSpeed = 0.5f; //Defines zombies moving speed
     public float zombieDefaultSpeed = 0.5f; //Defines zombies default moving speed
     public float attackSpeed = 1; //Defines the attack speed of the  zombie
-    public float rightSpeed = 0.5f; // Defines 
-    public int zombieDamage = 25;
-    public bool isAttacking = false;
-    public bool movingLeft = true;
+    public float rightSpeed = 0.5f; // Defines the speed of the zombie moving right (aka delaying an attack)
+    public int zombieDamage = 25; //Dictates damage delt to plants 
+    public bool isAttacking = false; //Dictates whether or not the zombie is attacking
+    public bool movingLeft = true; //Dictates whether or not the zombie is moving left
 
 
     private void Start()
