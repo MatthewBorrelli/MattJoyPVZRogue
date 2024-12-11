@@ -103,14 +103,14 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 1.5353603
+  m_Height: 3.0707207
   m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.033573627, y: -0.0035719872, z: 0.047159195}
 --- !u!114 &791654675512544116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,9 +139,12 @@ MonoBehaviour:
   leftPoint: {fileID: 1837930796014856759}
   rightPoint: {fileID: 1351539321568567453}
   zombieSpeed: 0.5
-  attackSpeed: 1
+  zombieDefaultSpeed: 0.5
+  attackSpeed: 0.5
+  rightSpeed: 0.5
   zombieDamage: 25
   isAttacking: 0
+  movingLeft: 1
 --- !u!1 &1351539321568567453
 GameObject:
   m_ObjectHideFlags: 0
