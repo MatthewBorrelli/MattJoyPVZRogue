@@ -19,6 +19,7 @@ public class GoldSpawner : MonoBehaviour
 
     public float timer;
     public float fallTime;
+    public int GOLDVALUE = 50;
 
     // Start is called before the first frame update
     void Start()

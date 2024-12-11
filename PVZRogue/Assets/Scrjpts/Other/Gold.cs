@@ -22,4 +22,8 @@ public class Gold : MonoBehaviour
             fallTime -= 0.01f;
         }
     }
+    public void SetValueAndFallTime(int val, float ft){
+        value = val;
+        fallTime = ft;
+    }
 }
