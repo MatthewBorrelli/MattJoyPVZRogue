@@ -4,6 +4,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ResourceManager : MonoBehaviour
 {
@@ -13,13 +14,14 @@ public class ResourceManager : MonoBehaviour
 
     public Camera gameCamera;
 
+    public TMP_Text goldText;
+
 
     void Update(){
 
         if(Input.GetMouseButtonDown(0) && Physics.Raycast(gameCamera.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, out hit)){
             
             if(hit.collider.GetComponent<Gold>()){
-                print("Hit gold");
                 gold += hit.collider.GetComponent<Gold>().value;
                 Destroy(hit.collider.GetComponent<Gold>().gameObject);
             }
@@ -35,6 +37,7 @@ public class ResourceManager : MonoBehaviour
                 print("There is already a unit on that square.");
             
         }
+        goldText.text = "Gold: " + gold;
 
     }
 }
