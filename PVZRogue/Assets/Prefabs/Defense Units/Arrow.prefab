@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowSpeed: 5
-  arrowDamage: 10
+  arrowDamage: 25
 --- !u!54 &-3237485858260668430
 Rigidbody:
   m_ObjectHideFlags: 0
