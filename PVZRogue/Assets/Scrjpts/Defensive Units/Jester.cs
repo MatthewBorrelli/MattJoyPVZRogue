@@ -20,7 +20,7 @@ public class Jester : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        if(other.GetComponent<Zombie>())
+        if(other.GetComponent<Zombie>() && primed)
             StartCoroutine(ExplodeAndDespawn());
     }
 
