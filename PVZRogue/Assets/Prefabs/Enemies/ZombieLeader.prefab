@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftPoint: {fileID: 0}
   rightPoint: {fileID: 0}
-  zombieSpeed: 1
+  zombieSpeed: 0.75
   zombieDefaultSpeed: 1
   attackSpeed: 0.5
   rightSpeed: 0.5
