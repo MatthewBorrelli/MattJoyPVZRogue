@@ -16,7 +16,6 @@ public class ResourceManager : MonoBehaviour
 
     public TMP_Text goldText;
 
-    public int enemiesKilled = 0;
 
     void Update(){
 

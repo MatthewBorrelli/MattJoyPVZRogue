@@ -17,7 +17,7 @@ public class Archer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Shoot", 4f, 4f);
+        InvokeRepeating("Shoot", 3f, 3f);
     }
 
     public void Shoot()
