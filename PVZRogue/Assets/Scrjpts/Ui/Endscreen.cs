@@ -9,10 +9,12 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class Endscreen : MonoBehaviour
 {
+    //Switches Scenes when needed
  public void SwitchScene(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
     }
+    //Closes the application
     public void QuitGame()
     {
         Application.Quit();

@@ -13,6 +13,7 @@ public class DeathZone : MonoBehaviour
     {
         if (other.GetComponent <Zombie>())
         {
+            //Destroys the zombie, and takes the player to the Game Over Screen
             Destroy(other.gameObject);
             SceneManager.LoadScene("Game Over");
         }
