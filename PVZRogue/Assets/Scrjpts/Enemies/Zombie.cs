@@ -17,6 +17,7 @@ public class Zombie : MonoBehaviour
         zombieHealth -= damage; 
         if (zombieHealth <= 0)
         {
+            FindObjectOfType<WaveSpawner>().zombiesKilled += 1;
             Destroy(gameObject);
         }
     }
