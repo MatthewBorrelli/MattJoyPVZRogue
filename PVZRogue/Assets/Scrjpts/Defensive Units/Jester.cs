@@ -12,10 +12,13 @@ public class Jester : MonoBehaviour
 
     public SpriteRenderer spriteRend;
 
+    public DefenseUnit defU;
+
     // Start is called before the first frame update
     void Start()
     {
         spriteRend = GetComponent<SpriteRenderer>();
+        defU = GetComponent<DefenseUnit>();
         StartCoroutine(ActivationWait());
     }
 
@@ -41,6 +44,7 @@ public class Jester : MonoBehaviour
     IEnumerator ExplodeAndDespawn(){
         this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         yield return new WaitForSeconds(0.5f);
+        defU.gridSpace.empty = true;
         Destroy(gameObject);
     }
 }

@@ -12,7 +12,6 @@ public class Archer : MonoBehaviour
     public GameObject arrow;
     
     RaycastHit hit;
-    public float rayLength = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +21,7 @@ public class Archer : MonoBehaviour
 
     public void Shoot()
     {
-        if(Physics.Raycast(transform.position + (Vector3.back * 0.1f), Vector3.right, out hit, rayLength)){
+        if(Physics.Raycast(transform.position + (Vector3.back * 0.1f), Vector3.right, out hit)){
             if(hit.collider.GetComponent<Zombie>())
                 Instantiate(arrow, transform.position + (Vector3.back * 0.1f), transform.rotation);
         }
