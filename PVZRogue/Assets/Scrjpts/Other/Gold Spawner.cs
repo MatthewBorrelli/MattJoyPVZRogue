@@ -27,7 +27,7 @@ public class GoldSpawner : MonoBehaviour
         rightX = rightBounds.transform.position.x;
         leftX = leftBounds.transform.position.x;
 
-        timer = Random.Range(4f, 7f);
+        timer = Random.Range(5f, 9f);
         fallTime = Random.Range(1f, 3f);
         InvokeRepeating("SpawnGold", 0f, timer);
     }

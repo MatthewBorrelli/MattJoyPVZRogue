@@ -12,7 +12,7 @@ public class Miner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnGold", 5f, 5f);
+        InvokeRepeating("SpawnGold", 10f, 10f);
     }
 
     private void SpawnGold(){
