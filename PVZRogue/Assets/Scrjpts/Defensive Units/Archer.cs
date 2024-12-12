@@ -23,7 +23,8 @@ public class Archer : MonoBehaviour
     public void Shoot()
     {
         if(Physics.Raycast(transform.position, Vector3.right, out hit, rayLength)){
-            Instantiate(arrow, transform.position + (Vector3.back * 0.1f), transform.rotation);
+            if(hit.collider.GetComponent<Zombie>())
+                Instantiate(arrow, transform.position + (Vector3.back * 0.1f), transform.rotation);
         }
     }  
 }

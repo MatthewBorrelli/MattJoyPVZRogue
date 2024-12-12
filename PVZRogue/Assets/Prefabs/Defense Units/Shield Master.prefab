@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 5189332317942839629}
   - component: {fileID: 68263183542760633}
   - component: {fileID: 8553466392938282074}
-  - component: {fileID: -6114470597132815578}
   m_Layer: 0
-  m_Name: Miner
+  m_Name: Shield Master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -848851634, guid: 20ec525db91fd294cbacb2294028cbd7, type: 3}
+  m_Sprite: {fileID: 969786563, guid: 1fd77528b6ef37242b8aaf8829a25d68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.68}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341b6fc5c1a6a800aa9b5cb2c7d71b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 75
-  cost: 50
-  iconSprite: {fileID: -848851634, guid: 20ec525db91fd294cbacb2294028cbd7, type: 3}
+  health: 1500
+  cost: 175
+  iconSprite: {fileID: 969786563, guid: 1fd77528b6ef37242b8aaf8829a25d68, type: 3}
   gridSpace: {fileID: 0}
 --- !u!65 &68263183542760633
 BoxCollider:
@@ -152,16 +151,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &-6114470597132815578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7169082190096366160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d23e0c2260e9c04e984217869af03da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gold: {fileID: 4088647323591827620, guid: 0fd8525842368974092b6ac781e9c901, type: 3}

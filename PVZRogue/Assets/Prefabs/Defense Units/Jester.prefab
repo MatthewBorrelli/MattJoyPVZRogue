@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  cost: 10
+  cost: 150
   iconSprite: {fileID: 1374666895, guid: f0d4bf8ee4ad2b8418201cbc5f5a8de5, type: 3}
   gridSpace: {fileID: 0}
 --- !u!65 &68263183542760633
