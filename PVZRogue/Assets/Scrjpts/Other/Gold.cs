@@ -1,6 +1,6 @@
 //Joy Schulze
 //December 10th
-//Stores the value of the gold
+//Stores the value of the gold and makes it fall for a little bit
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

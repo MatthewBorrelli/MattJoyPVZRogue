@@ -13,13 +13,14 @@ public class CurrentDefenses : MonoBehaviour
     public GameObject[] buttons;
     public ResourceManager reMan;
 
+    ///Gives the buttons the icon of their respective unit
     void Start(){
         for(int i = 0; i < defences.Length; i++){
             buttons[i].GetComponent<Image>().sprite = defences[i].GetComponent<DefenseUnit>().iconSprite;
             buttons[i].transform.GetChild(0).GetComponent<TMP_Text>().text = "Cost " + defences[i].GetComponent<DefenseUnit>().cost;
         }
     }
-
+    ///Allows you to buy a plant if you have the gold
     public void BuyUnit(int index){
         DefenseUnit unit = defences[index].GetComponent<DefenseUnit>();
         if(unit.cost <= reMan.gold){

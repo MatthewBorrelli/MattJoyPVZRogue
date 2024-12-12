@@ -18,7 +18,7 @@ public class Archer : MonoBehaviour
     {
         InvokeRepeating("Shoot", 3f, 3f);
     }
-
+    ///Shoots an arrow if a zombie is in it's lane
     public void Shoot()
     {
         if(Physics.Raycast(transform.position + (Vector3.back * 0.1f), Vector3.right, out hit)){
